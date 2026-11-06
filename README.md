@@ -1,7 +1,6 @@
 # Kopi dan Nyemil
 
-Aplikasi Android pemesanan kopi, minuman, dan makanan ringan.
-Tagline: **Teman Ngopi, Teman Ngemil**.
+Aplikasi Android pemesanan kopi, minuman, dan makanan ringan
 
 ## Deskripsi
 Kopi dan Nyemil memungkinkan pengguna melihat menu, memasukkan produk ke
