@@ -1,0 +1,42 @@
+<resources>
+    <style name="Theme.KopiDanNyemil" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorPrimaryDark">@color/navy</item>
+        <item name="colorAccent">@color/teal</item>
+        <item name="android:windowBackground">@drawable/bg_gradient</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="KnTitle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="KnSubtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/navy</item>
+    </style>
+
+    <style name="KnInput">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="KnButton">
+        <item name="android:background">@drawable/bg_primary_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

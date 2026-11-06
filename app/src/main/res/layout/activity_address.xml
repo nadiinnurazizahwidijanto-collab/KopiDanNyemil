@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svAddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Kembali"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/navy" />
+
+        <TextView
+            style="@style/KnTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Alamat Pengiriman" />
+
+        <TextView
+            style="@style/KnSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:text="Alamat bertanda Utama dipakai saat memesan" />
+
+        <LinearLayout
+            android:id="@+id/llAddresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvNone"
+            style="@style/KnSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_card"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Belum ada alamat tersimpan."
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            style="@style/KnTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tambah Alamat Baru"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="Nama Penerima (contoh: Nadia Putri)"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="Nomor Telepon (08xxxxxxxxxx)"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_home"
+            android:hint="Alamat Lengkap (contoh: Jl. Melati No.12)"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/etCity"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_location"
+            android:hint="Kota/Kecamatan (contoh: Bandung)"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etPostal"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="Kode Pos (contoh: 40123)"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/cbPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:buttonTint="@color/navy"
+            android:text="Jadikan alamat utama"
+            android:textColor="@color/navy" />
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/KnButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:text="Simpan Alamat" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/KnButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_reference_button"
+            android:text="Batal Ubah"
+            android:textColor="@color/navy"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

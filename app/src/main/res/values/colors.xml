@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#2D4359</color>
+    <color name="teal">#608B99</color>
+    <color name="teal_dark">#3E6A79</color>
+    <color name="teal_light">#A9C6D1</color>
+    <color name="sky_blue">#C8DCE8</color>
+    <color name="beige">#F4EEE8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="stroke">#D5E2EA</color>
+    <color name="hint">#7D93A0</color>
+    <color name="danger">#D32F2F</color>
+    <!-- warna bawaan template lama (supaya file lama tidak error) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>

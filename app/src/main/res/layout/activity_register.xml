@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Kembali"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/navy" />
+
+        <TextView
+            style="@style/KnTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lengkapi Data" />
+
+        <TextView
+            style="@style/KnSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:text="Isi data diri Anda untuk melanjutkan" />
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="Nama Lengkap"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="Nomor Telepon"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/etConfirm"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Konfirmasi Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/navy" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                style="@style/KnSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCreate"
+            style="@style/KnButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:text="Buat Akun" />
+    </LinearLayout>
+</ScrollView>

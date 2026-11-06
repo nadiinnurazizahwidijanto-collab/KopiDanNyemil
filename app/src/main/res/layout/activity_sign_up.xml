@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Kembali"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/navy" />
+
+        <TextView
+            style="@style/KnTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Buat Akun" />
+
+        <TextView
+            style="@style/KnSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Daftar untuk mulai memesan" />
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="Nama Lengkap"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/KnInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            style="@style/KnButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:text="Daftar" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/KnSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Sudah punya akun? Masuk"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
