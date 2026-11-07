@@ -79,7 +79,7 @@ class CartActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        refresh() // juga memuat ulang alamat setelah kembali dari AddressActivity
+        refresh() 
     }
 
     private fun selectMethod(method: String) {
