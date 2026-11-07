@@ -67,9 +67,6 @@ fun EditText.enablePasswordToggle() {
     }
 }
 
-// ---------------------------------------------------------------
-// Akun pengguna (SIMULASI, disimpan lokal; password di-hash, bukan teks biasa)
-// ---------------------------------------------------------------
 object UserStore {
     private const val PREF = "kn_user"
 
@@ -108,9 +105,7 @@ object UserStore {
     fun phone(c: Context) = p(c).getString("phone", "") ?: ""
 }
 
-// ---------------------------------------------------------------
-// Alamat pengiriman
-// ---------------------------------------------------------------
+
 data class Address(
     val name: String,
     val phone: String,
@@ -148,9 +143,7 @@ object AddressStore {
     }
 }
 
-// ---------------------------------------------------------------
-// Pesanan
-// ---------------------------------------------------------------
+
 data class OrderLine(val name: String, val qty: Int, val price: Int)
 
 data class Order(
@@ -176,7 +169,6 @@ object OrderStore {
     private fun readArray(c: Context): JSONArray =
         try { JSONArray(p(c).getString("orders", "[]")) } catch (e: Exception) { JSONArray() }
 
-    /** Semua pesanan, yang terbaru di urutan pertama. */
     fun all(c: Context): List<Order> {
         val arr = readArray(c)
         val list = mutableListOf<Order>()
@@ -201,7 +193,6 @@ object OrderStore {
 
     fun find(c: Context, id: String): Order? = all(c).find { it.id == id }
 
-    /** Membuat pesanan dari isi keranjang saat ini lalu menyimpannya. */
     fun create(c: Context, address: Address, method: String): Order {
         val pref = p(c)
         val counter = pref.getInt("counter", 0) + 1
@@ -221,7 +212,6 @@ object OrderStore {
             shipping = CartManager.shipping(),
             total = CartManager.total(),
             orderStatus = "Pesanan dibuat — Dalam Proses",
-            // Belum ada integrasi penyedia pembayaran, jadi TIDAK PERNAH otomatis "berhasil".
             paymentStatus = "Menunggu Pembayaran (SIMULASI)"
         )
 
