@@ -30,7 +30,6 @@ class ProfileActivity : AppCompatActivity() {
         private const val HELP_WA_NUMBER = "628000000000"
     }
 
-    // Memilih foto dari galeri
     private val pickImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
         if (uri != null) {
             if (savePhoto(uri)) loadAvatar() else toast("Gagal memuat foto")
