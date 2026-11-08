@@ -17,6 +17,9 @@ Aplikasi ini masih berupa **versi demo**. Proses login dan pembayaran (Transfer 
 E-Wallet, dan QRIS) hanya simulasi, dan seluruh data tersimpan di perangkat tanpa
 server, jadi belum ada transaksi sungguhan yang diproses.
 
+Tampilan aplikasi mengikuti wireframe yang diberikan dosen, lalu dikembangkan agar lebih
+modern dengan tambahan Keranjang, pilihan metode pembayaran, dan riwayat pesanan.
+
 ## Fitur
 - Welcome, Sign Up, Lengkapi Data (Register), dan Login dengan validasi input
 - Home: daftar 8 produk, pencarian, dan filter kategori (Semua, Kopi, Non-Kopi, Snack)
