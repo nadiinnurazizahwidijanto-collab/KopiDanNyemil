@@ -95,7 +95,7 @@ modern dengan tambahan Keranjang, pilihan metode pembayaran, dan riwayat pesanan
   </tr>
 </table>
 
-## Pembuat
+## Dibuat oleh
 - Nama: Nadiin Nur'Azizah W
 - NIM: 1247050128
 - Mata kuliah: Pengembangan Aplikasi Web
