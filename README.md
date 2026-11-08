@@ -66,7 +66,7 @@ modern dengan tambahan Keranjang, pilihan metode pembayaran, dan riwayat pesanan
   </tr>
 </table>
 
-### Menu dan Keranjang
+### Menu, keranjang dan alamat
 <table>
   <tr>
     <td align="center"><b>Home</b><br><img src="screenshots/05_home.png" width="200"></td>
@@ -76,7 +76,7 @@ modern dengan tambahan Keranjang, pilihan metode pembayaran, dan riwayat pesanan
   </tr>
 </table>
 
-### Konfirmasi Pesanan
+### Pembayaran, konfirmasi dan riwayat
 <table>
   <tr>
     <td align="center"><b>Transfer Bank</b><br><img src="screenshots/09_confirm_bank.png" width="200"></td>
